@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
+    volumes:
+      - ./tw3.html:/app/tw3.html
+      - ./assets:/app/img
+      - ./css:/app/css
