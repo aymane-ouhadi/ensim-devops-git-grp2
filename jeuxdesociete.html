@@ -10,7 +10,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./css/diceStyles.css">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;900&display=swap" rel="stylesheet">
+   
     <title>Les As de l'ENSIM</title>
 
   </head>
@@ -42,6 +45,12 @@
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#deals">Deals</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./jeuxdesociete.html#credits">Crédits</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./tw3.html">The Witcher 3</a>
                   </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0 d-none d-md-block">
@@ -104,6 +113,9 @@
                   <li class="list-group-item">
                     <a class="nav-link" href="#showtimes">cartagena (2001)</a>
                   </li>
+                  <li class="list-group-item">
+                    <a class="nav-link" href="#showtimes">Red Dead Redemption (2018)</a>
+                  </li>
                 </ul>
                 </div>
               </div>
@@ -148,15 +160,15 @@
                   </div>
                 </div>
                 <div class="card">
-                  <img class="card-img-top" src="./img/blokus.jpg" alt="Card image cap">
+                  <img class="card-img-top" src="./img/uno-cards.jpg" alt="Card image cap">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">UNO</h5>
                      <p class="card-text">
-                      <span class="badge badge-pill badge-info">12:00pm</span>
-                      <span class="badge badge-pill badge-info">1:30pm</span>
-                      <span class="badge badge-pill badge-info">3:00pm</span>
-                      <span class="badge badge-pill badge-info">4:30pm</span>
-                      <span class="badge badge-pill badge-info">6:00pm</span>
+                      <span class="badge badge-pill badge-info">1</span>
+                      <span class="badge badge-pill badge-info">2</span>
+                      <span class="badge badge-pill badge-info">3</span>
+                      <span class="badge badge-pill badge-info">UNO</span>
+                      <span class="badge badge-pill badge-info">!</span>
                     </p>
                     <div class="card-footer">
                       <small class="text-muted">Last updated 3 mins ago</small>
@@ -219,14 +231,14 @@
 
                 </div>
                 <div class="card">
-                  <img  class="card-img-top" src="./img/rummikub.jpg" alt="Card image cap">
+                  <img  class="card-img-top" src="./img/composio.jpg" alt="Card image cap">
                   <div class="card-body">
-                    <h5 class="card-title">rummikub</h5>
+                    <h5 class="card-title">Card title</h5>
                      <p class="card-text">
-                      <span class="badge badge-pill badge-info">1:00pm</span>
-                      <span class="badge badge-pill badge-info">1:23pm</span>
-                      <span class="badge badge-pill badge-info">3:21pm</span>
-                      <span class="badge badge-pill badge-info">4:00pm</span>
+                      <span class="badge badge-pill badge-info">12:00pm</span>
+                      <span class="badge badge-pill badge-info">1:30pm</span>
+                      <span class="badge badge-pill badge-info">3:00pm</span>
+                      <span class="badge badge-pill badge-info">4:30pm</span>
                       <span class="badge badge-pill badge-info">6:00pm</span>
                     </p>
                      <div class="card-footer">
@@ -248,6 +260,23 @@
                     </p>
                      <div class="card-footer">
                       <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+                 
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="./img/Red_dead_redemption_2.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Red dead redemption 2</h5>
+                     <p class="card-text">
+                      <span class="badge badge-pill badge-info">12:00pm</span>
+                      <span class="badge badge-pill badge-info">1:30pm</span>
+                      <span class="badge badge-pill badge-info">3:00pm</span>
+                      <span class="badge badge-pill badge-info">4:30pm</span>
+                      <span class="badge badge-pill badge-info">6:00pm</span>
+                    </p>
+                     <div class="card-footer">
+                      <small class="text-muted">Last updated 1 min ago</small>
                     </div>
                   </div>
                  
@@ -290,7 +319,7 @@
             <!-- /Jumbotron here -->
              <!-- Jumbotron here -->
     <div class=" jumbotron jumbotron-fluid text-center bg-info mt-5">
-      <div class="container d-none d-lg-block">
+      <div class="container d-none d-lg-block" id="credits">
         <h1 class="display-4" id="jumbo-title">Credit</h1>
         <ul>
           <li>Pierre Evan</li>
@@ -358,18 +387,31 @@
 
 
             <!-- Signup here -->  
-              <form  id="deals" class="py-4 text-center col-lg-12 ">
-                <div class="form-group">
-                  <label class="text-info" for="exampleInputEmail1"><small><h4>Stay current on new Games!</h4></small></label>
-                  <input type="email" class="form-control col-lg-4 mx-auto" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" >
-                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputPa">First Name</label>
+                  <input type="text" class="form-control" id="inputPa" placeholder="First Name">
                 </div>
-              <button type="button" class="btn btn-secondary btn-outline-info popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" data-trigger="click hover" data-content="Submit your email to receive great games reward deals!">
-                Subscribe
-              </button>
-
-
-              </form>
+                <div class="form-group col-md-6">
+                  <label for="inputP">Last Name</label>
+                  <input type="text" class="form-control" id="inputP" placeholder="Last Name">
+                </div>
+              </div>
+                <div class="form-group">
+                  <label for="inputEmail4">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                </div>
+              <div class="form-group">
+                <label for="inputA">Object</label>
+                <input type="text" class="form-control" id="inputA" placeholder="Write you message object">
+              </div>
+              <div class="form-group">
+                <label for="inputAb">Message</label>
+                <input type="text" class="form-control" id="inputAb" placeholder="Write you message">
+              </div>
+              <button type="submit" class="btn btn-primary">Send your message</button>
+            </form>
           <!-- Signup here --> 
 
 
